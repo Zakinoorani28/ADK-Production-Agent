@@ -1,0 +1,629 @@
+{
+  "eval_set_result_id": "agent_lead_qualifier_eval_1785572018.8411264",
+  "eval_set_result_name": "agent_lead_qualifier_eval_1785572018.8411264",
+  "eval_set_id": "lead_qualifier_eval",
+  "eval_case_results": [
+    {
+      "eval_set_file": "lead_qualifier_eval",
+      "eval_set_id": "lead_qualifier_eval",
+      "eval_id": "disqualify_unfit_lead",
+      "final_eval_status": 2,
+      "eval_metric_results": null,
+      "overall_eval_metric_results": [
+        {
+          "metric_name": "tool_trajectory_avg_score",
+          "threshold": 1.0,
+          "criterion": {
+            "threshold": 1.0,
+            "include_intermediate_responses_in_final": false
+          },
+          "custom_function_path": null,
+          "score": 1.0,
+          "eval_status": 1,
+          "details": {
+            "rubric_scores": null
+          }
+        },
+        {
+          "metric_name": "response_match_score",
+          "threshold": 0.5,
+          "criterion": {
+            "threshold": 0.5,
+            "include_intermediate_responses_in_final": false
+          },
+          "custom_function_path": null,
+          "score": 0.4859813084112149,
+          "eval_status": 2,
+          "details": {
+            "rubric_scores": null
+          }
+        }
+      ],
+      "eval_metric_result_per_invocation": [
+        {
+          "actual_invocation": {
+            "invocation_id": "e-92d7847b-57f4-4a11-8c00-87089fb9f217",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Research and qualify this lead: A small bakery in Lahore called Sweet Bites",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null,
+                  "audio_transcription": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "COMPANY: Sweet Bites Lahore\nSCORE: 6/10\nVERDICT: ✅ QUALIFY\nREASON: This is a small bakery in Lahore, Pakistan (preferred location). While not a core industry, retail businesses require basic networking for POS and Wi-Fi, and surveillance for security. They are a small to medium-sized business.\nSUGGESTED PRODUCT: ZKTeco (surveillance, access control), Ubiquiti UniFi (Wi-Fi, basic networking)",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null,
+                  "audio_transcription": null
+                }
+              ],
+              "role": "model"
+            },
+            "intermediate_data": {
+              "invocation_events": []
+            },
+            "creation_timestamp": 1785572017.3953354,
+            "rubrics": null,
+            "app_details": {
+              "agent_details": {
+                "root_agent": {
+                  "name": "root_agent",
+                  "instructions": "\nYou are a B2B Lead Qualifier Agent for a hardware distribution company\nthat sells Ubiquiti, Cisco, Huawei, ZKTeco, and surveillance gear.\n\nWhen given a company name or domain:\n1. Use google_search to research the company — industry, size, location,\n   what tech/networking/security products they might need.\n2. Score the lead from 1–10 based on:\n   - Industry fit (IT, telecom, real estate, govt, education = high)\n   - Company size (SMB to Enterprise preferred)\n   - Likely need for networking/surveillance/access control\n   - Location (Pakistan preferred, but GCC is good too)\n3. Return a structured verdict:\n\nCOMPANY: [name]\nSCORE: [X/10]\nVERDICT: ✅ QUALIFY / ❌ DISQUALIFY / 🟡 MAYBE\nREASON: [2-3 line explanation]\nSUGGESTED PRODUCT: [Ubiquiti UniFi / ZKTeco / Hikvision / etc.]\n\nBe direct. No fluff. Think like a sharp sales rep.\n\n\nYou are an agent. Your internal name is \"root_agent\". The description about you is \"B2B Lead Qualifier Agent that researches companies and scores them.\".",
+                  "tool_declarations": [
+                    {
+                      "retrieval": null,
+                      "computer_use": null,
+                      "file_search": null,
+                      "google_search": {
+                        "search_types": null,
+                        "blocking_confidence": null,
+                        "exclude_domains": null,
+                        "time_range_filter": null
+                      },
+                      "google_maps": null,
+                      "code_execution": null,
+                      "enterprise_web_search": null,
+                      "function_declarations": null,
+                      "google_search_retrieval": null,
+                      "parallel_ai_search": null,
+                      "url_context": null,
+                      "mcp_servers": null,
+                      "exa_ai_search": null
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "expected_invocation": {
+            "invocation_id": "",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Research and qualify this lead: A small bakery in Lahore called Sweet Bites",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null,
+                  "audio_transcription": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "COMPANY: Sweet Bites\nSCORE: 2/10\nVERDICT: ❌ DISQUALIFY\nREASON: Sweet Bites is a small bakery in Lahore. Their industry and size indicate minimal need for advanced networking, surveillance, or access control solutions that our company specializes in. Their IT requirements would be very basic.\nSUGGESTED PRODUCT: N/A",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null,
+                  "audio_transcription": null
+                }
+              ],
+              "role": "model"
+            },
+            "intermediate_data": null,
+            "creation_timestamp": 0.0,
+            "rubrics": null,
+            "app_details": null
+          },
+          "eval_metric_results": [
+            {
+              "metric_name": "tool_trajectory_avg_score",
+              "threshold": 1.0,
+              "criterion": {
+                "threshold": 1.0,
+                "include_intermediate_responses_in_final": false
+              },
+              "custom_function_path": null,
+              "score": 1.0,
+              "eval_status": 1,
+              "details": {
+                "rubric_scores": null
+              }
+            },
+            {
+              "metric_name": "response_match_score",
+              "threshold": 0.5,
+              "criterion": {
+                "threshold": 0.5,
+                "include_intermediate_responses_in_final": false
+              },
+              "custom_function_path": null,
+              "score": 0.4859813084112149,
+              "eval_status": 2,
+              "details": {
+                "rubric_scores": null
+              }
+            }
+          ]
+        }
+      ],
+      "session_id": "___eval___session___46ffeb82-28bb-44ee-ba17-e4cde6de8cfe",
+      "session_details": null,
+      "user_id": "test_user_id"
+    },
+    {
+      "eval_set_file": "lead_qualifier_eval",
+      "eval_set_id": "lead_qualifier_eval",
+      "eval_id": "qualify_it_company",
+      "final_eval_status": 1,
+      "eval_metric_results": null,
+      "overall_eval_metric_results": [
+        {
+          "metric_name": "tool_trajectory_avg_score",
+          "threshold": 1.0,
+          "criterion": {
+            "threshold": 1.0,
+            "include_intermediate_responses_in_final": false
+          },
+          "custom_function_path": null,
+          "score": 1.0,
+          "eval_status": 1,
+          "details": {
+            "rubric_scores": null
+          }
+        },
+        {
+          "metric_name": "response_match_score",
+          "threshold": 0.5,
+          "criterion": {
+            "threshold": 0.5,
+            "include_intermediate_responses_in_final": false
+          },
+          "custom_function_path": null,
+          "score": 0.6329113924050632,
+          "eval_status": 1,
+          "details": {
+            "rubric_scores": null
+          }
+        }
+      ],
+      "eval_metric_result_per_invocation": [
+        {
+          "actual_invocation": {
+            "invocation_id": "e-871cb96a-9e68-4d28-ab50-06f94908880b",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Research and qualify this lead: Systems Limited Pakistan",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null,
+                  "audio_transcription": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "COMPANY: Systems Limited Pakistan\nSCORE: 9/10\nVERDICT: ✅ QUALIFY\nREASON: Systems Limited is a leading multinational IT company in Pakistan with a large employee base and global presence. Their services include digital transformation, cloud, data, AI, and digital infrastructure services, which directly indicate a need for advanced networking, security, and access control hardware for internal operations and client projects. Their primary location in Pakistan is ideal.\nSUGGESTED PRODUCT: Ubiquiti UniFi (for scalable networking), Cisco (for enterprise-grade solutions), Huawei (for comprehensive networking and security), ZKTeco (for access control and time attendance).",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null,
+                  "audio_transcription": null
+                }
+              ],
+              "role": "model"
+            },
+            "intermediate_data": {
+              "invocation_events": []
+            },
+            "creation_timestamp": 1785572017.598284,
+            "rubrics": null,
+            "app_details": {
+              "agent_details": {
+                "root_agent": {
+                  "name": "root_agent",
+                  "instructions": "\nYou are a B2B Lead Qualifier Agent for a hardware distribution company\nthat sells Ubiquiti, Cisco, Huawei, ZKTeco, and surveillance gear.\n\nWhen given a company name or domain:\n1. Use google_search to research the company — industry, size, location,\n   what tech/networking/security products they might need.\n2. Score the lead from 1–10 based on:\n   - Industry fit (IT, telecom, real estate, govt, education = high)\n   - Company size (SMB to Enterprise preferred)\n   - Likely need for networking/surveillance/access control\n   - Location (Pakistan preferred, but GCC is good too)\n3. Return a structured verdict:\n\nCOMPANY: [name]\nSCORE: [X/10]\nVERDICT: ✅ QUALIFY / ❌ DISQUALIFY / 🟡 MAYBE\nREASON: [2-3 line explanation]\nSUGGESTED PRODUCT: [Ubiquiti UniFi / ZKTeco / Hikvision / etc.]\n\nBe direct. No fluff. Think like a sharp sales rep.\n\n\nYou are an agent. Your internal name is \"root_agent\". The description about you is \"B2B Lead Qualifier Agent that researches companies and scores them.\".",
+                  "tool_declarations": [
+                    {
+                      "retrieval": null,
+                      "computer_use": null,
+                      "file_search": null,
+                      "google_search": {
+                        "search_types": null,
+                        "blocking_confidence": null,
+                        "exclude_domains": null,
+                        "time_range_filter": null
+                      },
+                      "google_maps": null,
+                      "code_execution": null,
+                      "enterprise_web_search": null,
+                      "function_declarations": null,
+                      "google_search_retrieval": null,
+                      "parallel_ai_search": null,
+                      "url_context": null,
+                      "mcp_servers": null,
+                      "exa_ai_search": null
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "expected_invocation": {
+            "invocation_id": "",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Research and qualify this lead: Systems Limited Pakistan",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null,
+                  "audio_transcription": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "COMPANY: Systems Limited Pakistan\nSCORE: 9/10\nVERDICT: ✅ QUALIFY\nREASON: Systems Limited is a large, multinational IT and digital transformation company headquartered in Pakistan with operations across the Middle East. They provide digital infrastructure, network, and security services to a diverse clientele including government, banking, telecom, and retail, indicating a significant need for networking, surveillance, and access control hardware.\nSUGGESTED PRODUCT: Cisco, Huawei, Ubiquiti UniFi, ZKTeco, Hikvision",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null,
+                  "audio_transcription": null
+                }
+              ],
+              "role": "model"
+            },
+            "intermediate_data": null,
+            "creation_timestamp": 0.0,
+            "rubrics": null,
+            "app_details": null
+          },
+          "eval_metric_results": [
+            {
+              "metric_name": "tool_trajectory_avg_score",
+              "threshold": 1.0,
+              "criterion": {
+                "threshold": 1.0,
+                "include_intermediate_responses_in_final": false
+              },
+              "custom_function_path": null,
+              "score": 1.0,
+              "eval_status": 1,
+              "details": {
+                "rubric_scores": null
+              }
+            },
+            {
+              "metric_name": "response_match_score",
+              "threshold": 0.5,
+              "criterion": {
+                "threshold": 0.5,
+                "include_intermediate_responses_in_final": false
+              },
+              "custom_function_path": null,
+              "score": 0.6329113924050632,
+              "eval_status": 1,
+              "details": {
+                "rubric_scores": null
+              }
+            }
+          ]
+        }
+      ],
+      "session_id": "___eval___session___8d020ed6-4e0c-4fd6-aeaf-d05e1985c47e",
+      "session_details": null,
+      "user_id": "test_user_id"
+    },
+    {
+      "eval_set_file": "lead_qualifier_eval",
+      "eval_set_id": "lead_qualifier_eval",
+      "eval_id": "qualify_real_estate",
+      "final_eval_status": 1,
+      "eval_metric_results": null,
+      "overall_eval_metric_results": [
+        {
+          "metric_name": "tool_trajectory_avg_score",
+          "threshold": 1.0,
+          "criterion": {
+            "threshold": 1.0,
+            "include_intermediate_responses_in_final": false
+          },
+          "custom_function_path": null,
+          "score": 1.0,
+          "eval_status": 1,
+          "details": {
+            "rubric_scores": null
+          }
+        },
+        {
+          "metric_name": "response_match_score",
+          "threshold": 0.5,
+          "criterion": {
+            "threshold": 0.5,
+            "include_intermediate_responses_in_final": false
+          },
+          "custom_function_path": null,
+          "score": 0.6666666666666666,
+          "eval_status": 1,
+          "details": {
+            "rubric_scores": null
+          }
+        }
+      ],
+      "eval_metric_result_per_invocation": [
+        {
+          "actual_invocation": {
+            "invocation_id": "e-d8ab8e70-8abf-49aa-83d4-366aebe5f6ee",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Research and qualify this lead: Bahria Town Pakistan",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null,
+                  "audio_transcription": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "COMPANY: Bahria Town Pakistan\nSCORE: 10/10\nVERDICT: ✅ QUALIFY\nREASON: Bahria Town is Asia's largest private real estate developer, constructing and managing extensive gated communities that function as self-contained cities across Pakistan. They have a significant need for robust networking infrastructure, comprehensive surveillance systems, and advanced access control for their numerous residential, commercial, educational, and healthcare facilities.\nSUGGESTED PRODUCT: Ubiquiti UniFi (for extensive networking), Cisco/Huawei (for core networking infrastructure), Hikvision/Dahua (for comprehensive surveillance), ZKTeco (for access control systems).",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null,
+                  "audio_transcription": null
+                }
+              ],
+              "role": "model"
+            },
+            "intermediate_data": {
+              "invocation_events": []
+            },
+            "creation_timestamp": 1785572018.8184214,
+            "rubrics": null,
+            "app_details": {
+              "agent_details": {
+                "root_agent": {
+                  "name": "root_agent",
+                  "instructions": "\nYou are a B2B Lead Qualifier Agent for a hardware distribution company\nthat sells Ubiquiti, Cisco, Huawei, ZKTeco, and surveillance gear.\n\nWhen given a company name or domain:\n1. Use google_search to research the company — industry, size, location,\n   what tech/networking/security products they might need.\n2. Score the lead from 1–10 based on:\n   - Industry fit (IT, telecom, real estate, govt, education = high)\n   - Company size (SMB to Enterprise preferred)\n   - Likely need for networking/surveillance/access control\n   - Location (Pakistan preferred, but GCC is good too)\n3. Return a structured verdict:\n\nCOMPANY: [name]\nSCORE: [X/10]\nVERDICT: ✅ QUALIFY / ❌ DISQUALIFY / 🟡 MAYBE\nREASON: [2-3 line explanation]\nSUGGESTED PRODUCT: [Ubiquiti UniFi / ZKTeco / Hikvision / etc.]\n\nBe direct. No fluff. Think like a sharp sales rep.\n\n\nYou are an agent. Your internal name is \"root_agent\". The description about you is \"B2B Lead Qualifier Agent that researches companies and scores them.\".",
+                  "tool_declarations": [
+                    {
+                      "retrieval": null,
+                      "computer_use": null,
+                      "file_search": null,
+                      "google_search": {
+                        "search_types": null,
+                        "blocking_confidence": null,
+                        "exclude_domains": null,
+                        "time_range_filter": null
+                      },
+                      "google_maps": null,
+                      "code_execution": null,
+                      "enterprise_web_search": null,
+                      "function_declarations": null,
+                      "google_search_retrieval": null,
+                      "parallel_ai_search": null,
+                      "url_context": null,
+                      "mcp_servers": null,
+                      "exa_ai_search": null
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "expected_invocation": {
+            "invocation_id": "",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Research and qualify this lead: Bahria Town Pakistan",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null,
+                  "audio_transcription": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "COMPANY: Bahria Town Pakistan\nSCORE: 10/10\nVERDICT: ✅ QUALIFY\nREASON: Bahria Town is Asia's largest private real estate developer, building massive, integrated gated communities across Pakistan that include residential, commercial, hospitality, educational, and healthcare facilities. Their projects require extensive networking, smart security systems, and access control solutions for managing vast infrastructure and hundreds of thousands of residents.\nSUGGESTED PRODUCT: Ubiquiti UniFi, Cisco, Hikvision, ZKTeco",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null,
+                  "audio_transcription": null
+                }
+              ],
+              "role": "model"
+            },
+            "intermediate_data": null,
+            "creation_timestamp": 0.0,
+            "rubrics": null,
+            "app_details": null
+          },
+          "eval_metric_results": [
+            {
+              "metric_name": "tool_trajectory_avg_score",
+              "threshold": 1.0,
+              "criterion": {
+                "threshold": 1.0,
+                "include_intermediate_responses_in_final": false
+              },
+              "custom_function_path": null,
+              "score": 1.0,
+              "eval_status": 1,
+              "details": {
+                "rubric_scores": null
+              }
+            },
+            {
+              "metric_name": "response_match_score",
+              "threshold": 0.5,
+              "criterion": {
+                "threshold": 0.5,
+                "include_intermediate_responses_in_final": false
+              },
+              "custom_function_path": null,
+              "score": 0.6666666666666666,
+              "eval_status": 1,
+              "details": {
+                "rubric_scores": null
+              }
+            }
+          ]
+        }
+      ],
+      "session_id": "___eval___session___18fc2893-6d19-4c16-a74e-e99fd41afa1a",
+      "session_details": null,
+      "user_id": "test_user_id"
+    }
+  ],
+  "creation_timestamp": 1785572018.8411264
+}

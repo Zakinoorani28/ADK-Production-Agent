@@ -1,0 +1,48 @@
+{
+  "eval_set_id": "lead_qualifier_eval",
+  "eval_cases": [
+    {
+      "eval_id": "qualify_it_company",
+      "conversation": [
+        {
+          "user_content": {
+            "role": "user",
+            "parts": [
+              {
+                "text": "Research and qualify this lead: Systems Limited Pakistan"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "eval_id": "disqualify_bakery",
+      "conversation": [
+        {
+          "user_content": {
+            "role": "user",
+            "parts": [
+              {
+                "text": "Research and qualify this lead: Sweet Bites bakery Lahore"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "eval_id": "qualify_bahria",
+      "conversation": [
+        {
+          "user_content": {
+            "role": "user",
+            "parts": [
+              { "text": "Research and qualify this lead: Bahria Town Pakistan" }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
